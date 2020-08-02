@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:progress/screens/add_task_screen.dart';
 import 'package:progress/widgets/task_list.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 
 
 class ProjectDetailPage extends StatelessWidget {
