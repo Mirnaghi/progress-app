@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:progress/screens/project_detail.dart';
+import 'package:progress/screens/pojects_page.dart';
+// import 'package:progress/screens/project_detail.dart';
 import 'package:provider/provider.dart';
 
 import 'models/task.dart';
@@ -10,16 +11,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => TasksList(),
-          child: MaterialApp(
+    return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: ProjectDetailPage(),
-      ),
-    );
+        home: ProjectsPage(),);
   }
 }
 
@@ -49,3 +46,13 @@ class TasksList extends ChangeNotifier {
   }
 }
 
+// ChangeNotifierProvider(
+//       create: (_) => TasksList(),
+//           child: MaterialApp(
+//         title: 'Flutter Demo',
+//         theme: ThemeData(
+//           primarySwatch: Colors.blue,
+//         ),
+//         home: ProjectsPage(),//ProjectDetailPage(),
+//       ),
+//     )
